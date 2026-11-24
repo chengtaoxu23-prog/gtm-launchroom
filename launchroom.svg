@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="GTM Launchroom">
+  <rect width="48" height="48" rx="11" fill="#b9a7ff"/>
+  <g fill="none" stroke="#251846" stroke-width="2.6" stroke-linecap="round">
+    <ellipse cx="24" cy="24" rx="16" ry="9" transform="rotate(-38 24 24)"/>
+    <circle cx="24" cy="24" r="4" fill="#251846"/>
+    <circle cx="33.7" cy="12.25" r="3" fill="#b9a7ff"/>
+  </g>
+</svg>
