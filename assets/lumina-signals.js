@@ -85,13 +85,14 @@ export function migrateLumina(saved, current) {
   if (saved.signalRevision === 1) return saved;
   const reviewed = new Set(saved.log.map((entry) => entry.prId));
   const linked = new Set(saved.log.flatMap((entry) => entry.evidenceIds ?? []));
+  const currentIds = new Set(current.evidence.map(({ id }) => id));
   return {
     ...saved, signalRevision: 1,
     blocks: current.blocks.map((block) => {
       const previous = saved.blocks.find((item) => item.id === block.id);
       return saved.log.some((entry) => entry.module === block.id && entry.next) ? previous ?? block : block;
     }),
-    evidence: [...current.evidence, ...saved.evidence.filter((item) => linked.has(item.id) || item.id.startsWith("lm-new"))],
+    evidence: [...current.evidence, ...saved.evidence.filter((item) => !currentIds.has(item.id) && (linked.has(item.id) || item.id.startsWith("lm-new")))],
     pending: [...current.pending.filter((item) => !reviewed.has(item.id)), ...saved.pending.filter((item) => item.id === "PR-004")],
     guardrails: [...saved.guardrails.filter((item) => item.id !== luminaPrivacyGate.id), luminaPrivacyGate],
   };
