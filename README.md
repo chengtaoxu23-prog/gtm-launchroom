@@ -1,8 +1,8 @@
 # GTM Launchroom
 
-[![播放 GTM Launchroom 30 秒走查](media/preview.gif)](https://chengtaoxu23-prog.github.io/gtm-launchroom/media/)
+[![GTM Launchroom · 30 秒工作台走查](media/portfolio-walkthrough.gif)](media/portfolio-walkthrough.mp4)
 
-[打开工作台](https://chengtaoxu23-prog.github.io/gtm-launchroom/) · [播放 30 秒视频](https://chengtaoxu23-prog.github.io/gtm-launchroom/media/) · [下载 MP4](media/workbench.mp4)
+[打开在线工作台](https://gtm-launchroom.vercel.app/) · [下载 30 秒录屏](media/portfolio-walkthrough.mp4)
 
 ## 项目定位
 
