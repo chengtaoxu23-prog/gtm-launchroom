@@ -1,0 +1,8 @@
+{
+  "name": "gtm-launchroom",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --check assets/lumina-signals.js && node --check assets/index-DQfShowm.js && node scripts/build.js"
+  }
+}
